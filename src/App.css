@@ -1,0 +1,159 @@
+.mainView {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.documentGrid {
+  width: 100%;
+  min-height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.gridCellBlock {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gridCellBlockSingle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+.navBar {
+  width: 100%;
+  height: 8vh;
+  background-color: #5074A4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.leftSideNav {
+  color: #fff;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rightSideNav {
+  color: #fff;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 180%;
+}
+
+@media only screen and (max-width: 600px) {
+  .leftSideNav {
+    width: 40%;
+  }
+  .rightSideNav {
+    width: 40%;
+  }
+}
+
+.trashUpNav {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plusUpNav:hover, .trashUpNav:hover {
+  -webkit-filter: drop-shadow(0px 0px 1px white);
+          filter: drop-shadow(0px 0px 1px white);
+  cursor: pointer;
+}
+
+.docButton {
+  color: #f12c57;
+  position: relative;
+}
+
+.docButton .docTrashIcon {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.docButton .docTrashIcon:hover {
+  -webkit-filter: drop-shadow(0px 0px 2px #f12c57);
+          filter: drop-shadow(0px 0px 2px #f12c57);
+}
+
+.deleteFiles {
+  position: absolute;
+  right: 2%;
+  bottom: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  font-size: 150%;
+  background-color: #5074A4;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px #636363;
+          box-shadow: 0px 0px 10px #636363;
+}
+
+.deleteFiles:active {
+  -webkit-filter: drop-shadow(0px 0px 2px #f12c57);
+          filter: drop-shadow(0px 0px 2px #f12c57);
+}
+/*# sourceMappingURL=App.css.map */

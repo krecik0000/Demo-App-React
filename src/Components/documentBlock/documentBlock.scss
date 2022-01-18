@@ -1,0 +1,35 @@
+.docCell{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+.docIcon{
+    font-size: 650%;
+}
+.docBottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .docTitle{
+        color: #5074A4;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .docName{
+            font-weight: bold;
+        }
+        .docDate{
+            font-size: 80%;
+        }
+    
+    }
+}
+

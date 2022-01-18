@@ -1,0 +1,100 @@
+.mainView{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.documentGrid{
+    width: 100%;
+    min-height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.gridCellBlock{
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gridCellBlockSingle{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.navBar{
+    width: 100%;
+    height: 8vh;
+    background-color: #5074A4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftSideNav{
+    color: #fff;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.rightSideNav{
+    color: #fff;
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 180%;
+}
+@media only screen and (max-width: 600px){
+    .leftSideNav{
+        width: 40%;
+    }
+    .rightSideNav{
+        width: 40%;
+    }
+}
+.trashUpNav{
+    color: #fff;
+    display: flex;
+}
+.plusUpNav, .trashUpNav{
+    &:hover{
+        filter: drop-shadow(0px 0px 1px white);
+        cursor: pointer;
+    }
+}
+.docButton{
+  color: #f12c57;
+  position: relative;
+  .docTrashIcon{
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      background-color: #fff;
+      transition: .2s;
+      &:hover{
+          filter: drop-shadow(0px 0px 2px#f12c57);
+      }
+  }
+}
+.deleteFiles{
+    position: absolute;
+    right: 2%;
+    bottom: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    font-size: 150%;
+    background-color: #5074A4;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(99, 99, 99);
+    &:active{
+        filter: drop-shadow(0px 0px 2px#f12c57);
+    }
+}
