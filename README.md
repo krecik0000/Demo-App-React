@@ -16,3 +16,4 @@ Instrukcja uruchomienia na `localhost`:
 
 *Aby aplikacja działała na hostingu nalerzy ją zbudować komendą:*
 ``npm run-script build``
+I zawartość folderu build wrzucić przez np. ftp na serwer i **Gotowe**
