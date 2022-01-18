@@ -1,0 +1,53 @@
+.docCell{
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.docIcon{
+    font-size: 650%;
+}
+.docBottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .docTitle{
+        color: #5074A4;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .docName{
+            font-weight: bold;
+        }
+        .docDate{
+            font-size: 80%;
+        }
+    
+    }
+    .docButton{
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        color: #f12c57;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        bottom: 0;
+        .docTrashIcon{
+            transition: .2s;
+            &:hover{
+                filter: drop-shadow(0px 0px 2px#f12c57);
+            }
+        }
+    }
+}
+
