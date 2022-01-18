@@ -13,3 +13,6 @@ Instrukcja uruchomienia na `localhost`:
 
 **3.** W cmd przejdź do tego folderu i wpisz:
 ``npm start``
+
+*Aby aplikacja działała na hostingu nalerzy ją zbudować komendą:*
+``npm run-script build``
